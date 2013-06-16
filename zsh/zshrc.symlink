@@ -45,7 +45,7 @@ plugins=(git brew bundler osx rails3 screen)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Wrap git around hub
 eval "$(hub alias -s)"
@@ -74,3 +74,4 @@ if declare -f _git_commands > /dev/null; then
 fi
 
 alias reload!='. ~/.zshrc'
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
