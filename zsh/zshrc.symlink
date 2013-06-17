@@ -75,3 +75,6 @@ fi
 
 alias reload!='. ~/.zshrc'
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/mysql/bin:$PATH #Add mysql to path
+
+source ~/.dotfiles/zsh/zsh_aliases.zsh
