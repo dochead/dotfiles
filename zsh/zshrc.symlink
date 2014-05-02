@@ -45,7 +45,7 @@ plugins=(git brew bundler osx rails screen)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=:~/bin:/usr/local/bin:/usr/local/sbin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Wrap git around hub
 eval "$(hub alias -s)"
