@@ -79,3 +79,6 @@ export PATH=/usr/local/mysql/bin:$PATH #Add mysql to path
 
 source ~/.dotfiles/zsh/zsh_aliases.zsh
 source ~/.bash_profile
+
+PERL_MB_OPT="--install_base \"/Users/shayan.raghavjee/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/shayan.raghavjee/perl5"; export PERL_MM_OPT;
