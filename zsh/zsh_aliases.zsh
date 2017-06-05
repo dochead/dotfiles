@@ -1,29 +1,44 @@
-alias logonhp='ssh -A starscream.local'
-alias logonlad='ssh -A www.laduma.co'
-alias logonphp='ssh -A 162.209.53.137'
-alias logonftp='ssh -A 166.78.237.92'
-alias logonama='ssh -A ubuntu@dieburger.redactor.local'
+alias redb='chske;psql -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '"'"'skeletor'"'"' AND pid <> pg_backend_pid();";psql -c "DROP DATABASE skeletor;"; psql -c "CREATE DATABASE skeletor WITH OWNER shayan ENCODING '"'"'UTF8'"'"';"; ./manage.py migrate --run-syncdb'
 
-alias killtunnels='ps ax | grep -i '"'"'ssh -f'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
-alias tunphp='ssh -f 162.209.53.137 -L 3307:localhost:3306 -N'
+alias act_py='source ~/media24/virts/py/bin/activate'
 
-alias killtorn='ps ax | grep -i '"'"'python service.py'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
-alias act24='source ~/media24/vp/bin/activate'
-alias act_pay='source ~/media24/virts/dj_paywall/bin/activate'
-alias chpay='act_pay;cd ~/media24/dj_paywall'
-alias act_fab='source ~/media24/virts/fablib/bin/activate'
-alias chfab='act_fab;cd ~/media24/newspapers_datatools'
+alias edal='atom ~/.dotfiles/zsh/zsh_aliases.zsh'
+alias edz='atom ~/.zshrc'
+alias reload!='. ~/.zshrc'
 
-alias act_ans='source ~/media24/virts/anselib/bin/activate'
-alias chans='act_ans;cd ~/media24/anselib'
-
-alias edal='edit ~/.dotfiles/zsh/zsh_aliases.zsh'
-alias ofh='open .'   # Open finder here
-
-alias gcd='git checkout development'
-
-alias dumppay='mysqldump -u root -ppaywall_root -h paywall-dev.cmqip79jiego.eu-west-1.rds.amazonaws.com --add-drop-table --no-create-db paywalldb > dump-paywall.`date +%Y%m%d`.sql'
-alias dumppay_stage='mysqldump -u root -proot -h paywall-stage.cmqip79jiego.eu-west-1.rds.amazonaws.com --add-drop-table --no-create-db paywalldb > dump-stage-paywall.`date +%Y%m%d`.sql'
-alias dumppay_live='mysqldump -u root --password=I8DaYPdXNa -h paywall-db.cmqip79jiego.eu-west-1.rds.amazonaws.com  --databases paywalldb --add-drop-table --no-create-db > dump-live-paywall.`date +%Y%m%d`.sql'
+alias gcd='git checkout develop'
+alias gmod='git merge origin/develop'
+alias gfb='git checkout -b feature/'
+function gpp() {
+    git add -A .
+    git commit -m $1
+    git push
+}
 
 alias topten='du -hsx * | sort -rh | head -10'
+# alias ipy='ipython qtconsole --ConsoleWidget.font_family="Source Control Pro" --ConsoleWidget.font_size=13'
+alias ipy='$VIRTUAL_ENV/bin/ipython'
+
+alias edit=atom
+
+alias rut='export PLAYER_PRO_V3_SETTINGS=/Users/shayan/span/playerpro/playerpro-api-v2/etc/settings.shayan.cfg;python -m unittest discover'
+alias af='alias | grep'
+
+alias pubkey="more ~/.ssh/id_rsa.public | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+alias dup='boot2docker up'
+alias logonhp='ssh shayan@starscream.local'
+
+# alias killtunnels='ps ax | grep -i '"'"'ssh -f'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
+#
+# alias killtorn='ps ax | grep -i '"'"'python service.py'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
+alias chans='workon anselib;cd ~/span/anselib'
+# alias chpro='workon playerpro;cd ~/span/playerpro/playerpro-api-v2'
+# alias chske='workon skeletor;cd ~/span/skeletor'
+# alias chtask='workon portal_tasks;cd ~/span/portal_tasks'
+# alias chloc='workon locations;cd ~/span/here-location-enrichment'
+# alias pgstart='postgres -D /usr/local/var/postgres'
+
+# alias ccr='npm run cc && touch ~/span/api-local-wrapper/api/package.json'
