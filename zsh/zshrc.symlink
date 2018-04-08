@@ -83,7 +83,5 @@ PERL_MB_OPT="--install_base \"/Users/shayan.raghavjee/perl5\""; export PERL_MB_O
 PERL_MM_OPT="INSTALL_BASE=/Users/shayan.raghavjee/perl5"; export PERL_MM_OPT;
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "/usr/local/opt/nvm/nvm.sh"
