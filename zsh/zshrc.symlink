@@ -40,7 +40,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler osx rails screen)
+plugins=(git bundler osx screen)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=:~/bin:/usr/local/bin:/usr/local/sbin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Wrap git around hub
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 # hub tab-completion script for zsh.
 # This script complements the completion script that ships with git.
@@ -56,22 +56,22 @@ eval "$(hub alias -s)"
 # vim: ft=zsh sw=2 ts=2 et
 
 # Autoload _git completion functions
-if declare -f _git > /dev/null; then
-  _git
-fi
-
-if declare -f _git_commands > /dev/null; then
-  _hub_commands=(
-    'alias:show shell instructions for wrapping git'
-    'pull-request:open a pull request on GitHub'
-    'fork:fork origin repo on GitHub'
-    'create:create new repo on GitHub for the current project'
-    'browse:browse the project on GitHub'
-    'compare:open GitHub compare view'
-  )
-  # Extend the '_git_commands' function with hub commands
-  eval "$(declare -f _git_commands | sed -e 's/base_commands=(/base_commands=(${_hub_commands} /')"
-fi
+# if declare -f _git > /dev/null; then
+#   _git
+# fi
+#
+# if declare -f _git_commands > /dev/null; then
+#  _hub_commands=(
+#    'alias:show shell instructions for wrapping git'
+#    'pull-request:open a pull request on GitHub'
+#    'fork:fork origin repo on GitHub'
+#    'create:create new repo on GitHub for the current project'
+#    'browse:browse the project on GitHub'
+#    'compare:open GitHub compare view'
+#  )
+#  # Extend the '_git_commands' function with hub commands
+#  eval "$(declare -f _git_commands | sed -e 's/base_commands=(/base_commands=(${_hub_commands} /')"
+# fi
 
 alias reload!='. ~/.zshrc'
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -82,3 +82,9 @@ source ~/.bash_profile
 
 PERL_MB_OPT="--install_base \"/Users/shayan.raghavjee/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/shayan.raghavjee/perl5"; export PERL_MM_OPT;
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
