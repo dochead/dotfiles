@@ -79,8 +79,11 @@ cask 'sourcetree'
 cask 'bartender'
 cask 'docker'
 cask 'fantastical'
+cask 'webstorm'
+cask 'pycharm'
+cask 'intellij-idea'
 
-mas 'PDF Signer', id: 428271079 
+mas 'PDF Signer', id: 428271079
 mas 'Xcode', id: 497799835
 mas 'Magnet', id: 441258766
 mas 'EasyRes', id: 688211836
