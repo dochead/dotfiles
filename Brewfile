@@ -37,6 +37,7 @@ brew 'glances'
 brew 'the_silver_searcher'
 brew 'nmap'
 brew 'links'
+brew 'telnet'
 
 cask 'tomighty'
 cask "appcleaner"
@@ -46,11 +47,12 @@ cask "muzzle"
 cask "quitter"
 cask "steam"
 cask "vagrant"
+cask "vagrant-manager"
 cask "viscosity"
 cask "zoomus"
 cask 'android-file-transfer'
 cask 'qlprettypatch'
-cask 'cheatsheet'
+#cask 'cheatsheet'
 cask 'qlstephen'
 cask 'visual-studio-code'
 cask 'flux'
@@ -82,6 +84,10 @@ cask 'fantastical'
 cask 'webstorm'
 cask 'pycharm'
 cask 'intellij-idea'
+cask 'datagrip'
+cask 'java'
+cask 'ngrok'
+cask 'numi'
 
 mas 'PDF Signer', id: 428271079
 mas 'Xcode', id: 497799835
@@ -105,3 +111,6 @@ mas 'ScreenFloat', id: 414528154
 mas 'Todoist', id: 585829637
 mas 'Spark', id: 1176895641
 mas 'Miniplay', id: 936243210
+mas 'Annotate', id: 918207447
+
+# exec "softwareupdate -i -a"
