@@ -1,116 +1,134 @@
 # specify a directory to install
 cask_args appdir: '/Applications'
 # install packages
+tap 'homebrew/cask-versions'
 tap 'caskroom/cask'
+tap "homebrew/bundle"
+tap "homebrew/core"
 
 brew 'ack'
-brew 'zsh-completions'
-brew 'zsh-autosuggestions'
-brew 'zsh-syntax-highlighting'
+brew "aria2"
+brew "awscli"
+brew "consul-template"
+brew 'ffmpeg'
 brew 'fzf'
-brew 'tree'
-brew 'python'
-brew 'wget'
-brew 'python@2'
-brew 'git'
-brew 'mas'
-brew 'zsh'
-brew "openssl"
-brew "readline"
-brew "xz"
+brew "gettext"
+brew "git"
+brew 'glances'
+brew "go"
+brew "gobject-introspection"
+brew "harfbuzz"
+brew "htop"
 brew "hub"
 brew "imagemagick"
 brew "jsonlint"
-brew "mysql", restart_service: true
-brew "nvm"
-brew "wget"
-brew "htop"
-brew 'awscli'
-brew 'mc'
-brew 'ncdu'
-brew 'tig'
-brew 'youtube-dl'
-brew 'tmux'
-brew 'speedtest_cli'
-brew 'ffmpeg'
-brew 'glances'
-brew 'the_silver_searcher'
-brew 'nmap'
+brew "libssh2"
 brew 'links'
+brew "mas"
+brew "maven"
+brew "midnight-commander"
+brew "mpv"
+brew "mtr"
+brew "mysql", restart_service: true
+brew "ncdu"
+brew 'nmap'
+brew "nvm"
+brew "openssl"
+brew "pixman"
+brew 'python'
+brew 'python@2'
+brew "pyqt"
+brew "pwgen"
+brew "readline"
+brew 'speedtest_cli'
 brew 'telnet'
+brew 'tig'
+brew "the_silver_searcher"
+brew 'tmux'
+brew 'tree'
+brew "unrar"
+brew "wget"
+brew "xvid"
+brew "xz"
+brew 'youtube-dl'
+brew "zeromq"
+brew "zsh"
+brew 'zsh-autosuggestions'
+brew 'zsh-completions'
+brew "zsh-syntax-highlighting"
 
-cask 'tomighty'
+
+cask '1password'
+cask 'alfred'
+cask 'android-file-transfer'
 cask "appcleaner"
+cask 'atext'
+cask 'bartender'
+cask 'calibre'
+cask 'dash'
+cask 'datagrip'
+cask 'disk-inventory-x'
+cask 'docker'
+cask 'fantastical'
+cask 'firefox'
+cask 'flux'
+cask 'go2shell'
 cask "google-chrome"
+cask 'intellij-idea'
+cask 'iterm2'
+cask 'java'
+cask 'kindle'
 cask "licecap"
 cask "muzzle"
+cask 'ngrok'
+cask 'numi'
+cask 'pycharm'
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlprettypatch'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
 cask "quitter"
+cask 'skitch'
+cask 'sourcetree'
+cask 'spotify'
 cask "steam"
+cask 'suspicious-package'
+cask 'tomighty'
 cask "vagrant"
 cask "vagrant-manager"
 cask "viscosity"
-cask "zoomus"
-cask 'android-file-transfer'
-cask 'qlprettypatch'
-#cask 'cheatsheet'
-cask 'qlstephen'
-cask 'visual-studio-code'
-cask 'flux'
-cask 'quicklook-csv'
-cask 'vlc'
-cask 'qlcolorcode'
-cask 'quicklook-json'
-cask 'webpquicklook'
-cask 'qlmarkdown'
-cask 'suspicious-package'
-cask 'firefox'
-cask 'alfred'
-cask 'flux'
 cask 'virtualbox'
-cask 'spotify'
-cask 'kindle'
-cask '1password'
-cask 'iterm2'
-cask 'calibre'
-cask 'dash'
-cask 'atext'
-cask 'disk-inventory-x'
-cask 'skitch'
-cask 'go2shell'
-cask 'sourcetree'
-cask 'bartender'
-cask 'docker'
-cask 'fantastical'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'webpquicklook'
 cask 'webstorm'
-cask 'pycharm'
-cask 'intellij-idea'
-cask 'datagrip'
-cask 'java'
-cask 'ngrok'
-cask 'numi'
+cask "zoomus"
+#cask 'cheatsheet'
 
-mas 'PDF Signer', id: 428271079
-mas 'Xcode', id: 497799835
-mas 'Magnet', id: 441258766
+mas 'Affinity Photo', id: 824183456
+mas 'Amphetamine', id: 937984704
+mas 'Annotate', id: 918207447
+mas 'Clocker', id: 1056643111
+mas 'Dropzone 3', id: 695406827
 mas 'EasyRes', id: 688211836
+mas 'FruitJuice', id: 671736912
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
-mas 'FruitJuice', id: 671736912
-mas 'Affinity Photo', id: 824183456
-mas 'The Unarchiver', id: 425424353
-mas 'PopClip', id: 445189367
-mas 'Pocket', id: 568494494
-mas 'Slack', id: 803453959
-mas 'Pages', id: 409201541
-mas 'Dropzone 3', id: 695406827
-mas 'Amphetamine', id: 937984704
-mas 'Clocker', id: 1056643111
 mas 'Numbers', id: 409203825
-mas 'Yoink', id: 457622435
-mas 'ScreenFloat', id: 414528154
-mas 'Todoist', id: 585829637
-mas 'Spark', id: 1176895641
+mas 'Magnet', id: 441258766
 mas 'Miniplay', id: 936243210
-mas 'Annotate', id: 918207447
+mas 'Pages', id: 409201541
+mas 'PDF Signer', id: 428271079
+mas 'Pocket', id: 568494494
+mas 'PopClip', id: 445189367
+mas 'ScreenFloat', id: 414528154
+mas 'Slack', id: 803453959
+mas 'Spark', id: 1176895641
+mas 'The Unarchiver', id: 425424353
+mas 'Todoist', id: 585829637
+mas 'Xcode', id: 497799835
+mas 'Yoink', id: 457622435
 
 # exec "softwareupdate -i -a"
