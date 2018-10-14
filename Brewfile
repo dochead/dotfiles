@@ -129,5 +129,6 @@ mas 'The Unarchiver', id: 425424353
 mas 'Todoist', id: 585829637
 mas 'Xcode', id: 497799835
 mas 'Yoink', id: 457622435
+mas "SQLPro", id: 899174769
 
 # exec "softwareupdate -i -a"
