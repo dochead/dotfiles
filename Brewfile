@@ -7,8 +7,11 @@ tap "homebrew/core"
 
 brew 'ack'
 brew "aria2"
+brew 'autoconf'
+brew 'automake'
 brew "awscli"
 brew "consul-template"
+brew 'coreutils'
 brew 'ffmpeg'
 brew 'fzf'
 brew "gettext"
@@ -21,7 +24,9 @@ brew "htop"
 brew "hub"
 brew "imagemagick"
 brew "jsonlint"
+brew 'libksba'
 brew "libssh2"
+brew 'libyaml'
 brew 'links'
 brew "mas"
 brew "maven"
@@ -33,6 +38,7 @@ brew "ncdu"
 brew 'nmap'
 brew "nvm"
 brew "openssl"
+brew "packer"
 brew "pixman"
 brew 'python'
 brew 'python@2'
@@ -89,6 +95,8 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask "quitter"
+cask "rambox"
+cask 'send-to-kindle'
 cask 'skitch'
 cask 'sourcetree'
 cask 'spotify'
@@ -129,6 +137,5 @@ mas 'The Unarchiver', id: 425424353
 mas 'Todoist', id: 585829637
 mas 'Xcode', id: 497799835
 mas 'Yoink', id: 457622435
-mas "SQLPro", id: 899174769
 
 # exec "softwareupdate -i -a"
