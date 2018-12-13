@@ -77,6 +77,7 @@ cask 'dash'
 cask 'datagrip'
 cask 'disk-inventory-x'
 cask 'docker'
+cask 'dropbox'
 cask 'fantastical'
 cask 'firefox'
 cask 'flux'
@@ -109,11 +110,12 @@ cask 'spotify'
 cask "steam"
 cask 'suspicious-package'
 cask 'tomighty'
-cask "vagrant"
-cask "vagrant-manager"
+#cask "vagrant"
+#cask "vagrant-manager"
 cask "viscosity"
-cask 'virtualbox'
+#cask 'virtualbox'
 cask 'visual-studio-code'
+cask 'vivaldi'
 cask 'vlc'
 cask 'webpquicklook'
 cask 'webstorm'
