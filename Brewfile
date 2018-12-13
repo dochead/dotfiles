@@ -64,12 +64,15 @@ brew "zsh-syntax-highlighting"
 
 
 cask '1password'
+cask 'acorn'
 cask 'alfred'
 cask 'android-file-transfer'
+cask 'android-studio'
 cask "appcleaner"
 cask 'atext'
 cask 'bartender'
 cask 'calibre'
+cask 'crossover'
 cask 'dash'
 cask 'datagrip'
 cask 'disk-inventory-x'
@@ -77,6 +80,7 @@ cask 'docker'
 cask 'fantastical'
 cask 'firefox'
 cask 'flux'
+cask 'gemini'
 cask 'go2shell'
 cask "google-chrome"
 cask 'intellij-idea'
@@ -85,6 +89,7 @@ cask 'java'
 cask 'kindle'
 cask "licecap"
 cask "muzzle"
+cask 'netshade'
 cask 'ngrok'
 cask 'numi'
 cask 'pycharm'
@@ -96,6 +101,7 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask "quitter"
 cask "rambox"
+cask 'scapple'
 cask 'send-to-kindle'
 cask 'skitch'
 cask 'sourcetree'
