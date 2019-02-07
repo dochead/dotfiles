@@ -28,6 +28,7 @@ brew 'libksba'
 brew "libssh2"
 brew 'libyaml'
 brew 'links'
+brew 'kubectl'
 brew "mas"
 brew "maven"
 brew "midnight-commander"
@@ -45,6 +46,7 @@ brew 'python@2'
 brew "pyqt"
 brew "pwgen"
 brew "readline"
+brew 'ruby'
 brew 'speedtest_cli'
 brew 'telnet'
 brew 'tig'
@@ -61,9 +63,9 @@ brew "zsh"
 brew 'zsh-autosuggestions'
 brew 'zsh-completions'
 brew "zsh-syntax-highlighting"
+brew 'zplug'
 
-
-cask '1password'
+#cask '1password'
 cask 'acorn'
 cask 'alfred'
 cask 'android-file-transfer'
@@ -73,7 +75,7 @@ cask 'atext'
 cask 'bartender'
 cask 'calibre'
 cask 'crossover'
-cask 'dash'
+cask 'cyberduck'
 cask 'datagrip'
 cask 'disk-inventory-x'
 cask 'docker'
@@ -87,12 +89,12 @@ cask "google-chrome"
 cask 'intellij-idea'
 cask 'iterm2'
 cask 'java'
-cask 'kindle'
 cask "licecap"
+cask 'minikube'
 cask "muzzle"
 cask 'netshade'
 cask 'ngrok'
-cask 'numi'
+cask 'phoenix-slides'
 cask 'pycharm'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
@@ -110,10 +112,11 @@ cask 'spotify'
 cask "steam"
 cask 'suspicious-package'
 cask 'tomighty'
-#cask "vagrant"
-#cask "vagrant-manager"
+cask 'ubersicht'
+cask "vagrant"
+cask "vagrant-manager"
 cask "viscosity"
-#cask 'virtualbox'
+cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'vivaldi'
 cask 'vlc'
@@ -133,7 +136,6 @@ mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Numbers', id: 409203825
 mas 'Magnet', id: 441258766
-mas 'Miniplay', id: 936243210
 mas 'Pages', id: 409201541
 mas 'PDF Signer', id: 428271079
 mas 'Pocket', id: 568494494

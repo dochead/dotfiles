@@ -1,4 +1,4 @@
-alias edal='code ~/.dotfiles/zsh/zsh_aliases.zsh'
+alias edal='code ~/dotfiles/zsh/zsh_aliases.zsh'
 alias edz='code ~/.zshrc'
 alias edbrew='code ~/Brewfile'
 alias reload!='. ~/.zshrc'
@@ -54,3 +54,4 @@ function whoat() {
 }
 
 alias dockstop='docker stop $(docker ps -a -q)'
+alias serv='python3 -m http.server'
