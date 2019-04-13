@@ -12,7 +12,10 @@ brew 'automake'
 brew "awscli"
 brew "consul-template"
 brew 'coreutils'
+brew 'dep'
+brew 'docker-compose'
 brew 'ffmpeg'
+brew 'flyway'
 brew 'fzf'
 brew "gettext"
 brew "git"
@@ -47,6 +50,7 @@ brew "pyqt"
 brew "pwgen"
 brew "readline"
 brew 'ruby'
+brew 'scrcpy'
 brew 'speedtest_cli'
 brew 'telnet'
 brew 'tig'
