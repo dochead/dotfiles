@@ -19,6 +19,7 @@ brew 'flyway'
 brew 'fzf'
 brew "gettext"
 brew "git"
+brew "git-extras"
 brew 'glances'
 brew "go"
 brew "gobject-introspection"
@@ -47,6 +48,7 @@ brew "pixman"
 brew 'python'
 brew 'python@2'
 brew "pyqt"
+brew "pv"
 brew "pwgen"
 brew "readline"
 brew 'ruby'
