@@ -55,3 +55,4 @@ function whoat() {
 
 alias dockstop='docker stop $(docker ps -a -q)'
 alias serv='python3 -m http.server'
+alias clears='printf '"'"'\033[2J\033[3J\033[1;1H'"'"'````'
