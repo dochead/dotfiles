@@ -34,13 +34,14 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 alias logonhp='ssh shayan@starscream.local'
 alias logonjen='ssh ubuntu@ec2-52-14-173-52.us-east-2.compute.amazonaws.com'
-alias logonves='ssh vestigovpn@192.168.1.245'
+#alias logonves='ssh vestigovpn@192.168.1.245'
 
 # alias killtunnels='ps ax | grep -i '"'"'ssh -f'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
 #
 # alias killtorn='ps ax | grep -i '"'"'python service.py'"'"' | grep -v grep | awk '"'"'{ print $1 }'"'"' | xargs kill'
 alias chans='workon anselib;cd ~/span/anselib'
-alias chdsp='cd ~/code/science37/nora-dispensation-service'
+#alias chdsp='cd ~/code/science37/nora-dispensation-service'
+alias py3d='workon py3-def'
 # alias chpro='workon playerpro;cd ~/span/playerpro/playerpro-api-v2'
 # alias chske='workon skeletor;cd ~/span/skeletor'
 # alias chtask='workon portal_tasks;cd ~/span/portal_tasks'
