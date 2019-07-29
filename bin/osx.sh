@@ -42,6 +42,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 
 # Set highlight color to yellow
 defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.937255 0.690196"
+defaults write NSGlobalDomain AppleAccentColor -string "2"
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2

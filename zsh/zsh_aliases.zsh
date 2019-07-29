@@ -1,6 +1,7 @@
 alias edal='code ~/dotfiles/zsh/zsh_aliases.zsh'
 alias edz='code ~/.zshrc'
 alias edbrew='code ~/Brewfile'
+alias edssh='code ~/.ssh/config'
 alias reload!='. ~/.zshrc'
 
 alias gcd='git checkout develop'
@@ -26,12 +27,13 @@ alias edit=code
 
 alias af='alias | grep'
 
-alias pubkey="more ~/.ssh/id_rsa.public | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy . | echo '=> Public key copied to pasteboard.'"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 alias logonhp='ssh shayan@starscream.local'
 alias logonjen='ssh ubuntu@ec2-52-14-173-52.us-east-2.compute.amazonaws.com'
+alias chpor='workon span-portal-bwukC97e;cd ~/span/span-portal'
 alias chans='workon anselib;cd ~/span/anselib'
 alias py3d='workon py3-def'
 
@@ -61,7 +63,7 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias la="ls -lhaF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -141,3 +143,16 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# fsshmap multiple ports
+function fsshmap() {
+  echo -n "-L $1:127.0.0.1:$1 " > $HOME/sh/sshports.txt
+  for ((i=($1+1);i<$2;i++))
+  do
+    echo -n "-L $i:127.0.0.1:$i " >> $HOME/sh/sshports.txt
+  done
+  line=$(head -n 1 $HOME/sh/sshports.txt)
+  cline="ssh "$3" "$line
+  echo $cline
+  eval $cline
+}

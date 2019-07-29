@@ -2,105 +2,121 @@
 cask_args appdir: '/Applications'
 # install packages
 tap 'caskroom/cask'
-tap "homebrew/bundle"
-tap "homebrew/core"
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'dart-lang/dart'
+tap 'jesseduffield/lazydocker'
 
 brew 'ack'
-brew "aria2"
+brew 'aria2'
 brew 'autoconf'
 brew 'automake'
-brew "awscli"
-brew "consul-template"
+brew 'awscli'
+brew 'consul-template'
 brew 'coreutils'
+brew 'dart', args: ['devel']
 brew 'dep'
 brew 'docker-compose'
 brew 'ffmpeg'
 brew 'flyway'
 brew 'fzf'
-brew "gettext"
-brew "git"
-brew "git-extras"
+brew 'gettext'
+brew 'git'
+brew 'git-extras'
+brew 'git-secrets'
 brew 'glances'
-brew "go"
-brew "gobject-introspection"
-brew "harfbuzz"
-brew "htop"
-brew "hub"
-brew "imagemagick"
-brew "jsonlint"
+brew 'go'
+brew 'gobject-introspection'
+brew 'graphviz'
+brew 'harfbuzz'
+brew 'htop'
+brew 'hub'
+brew 'imagemagick'
+brew 'jsonlint'
+brew 'lazydocker'
+brew 'lazygit'
 brew 'libksba'
-brew "libssh2"
+brew 'libxmlsec1'
+brew 'libssh2'
 brew 'libyaml'
 brew 'links'
 brew 'kubectl'
-brew "mas"
-brew "maven"
-brew "midnight-commander"
-brew "mpv"
-brew "mtr"
-brew "mysql", restart_service: true
-brew "ncdu"
+brew 'mas'
+brew 'maven'
+brew 'midnight-commander'
+brew 'mpv'
+brew 'mtr'
+#brew 'mysql', restart_service: true
+brew 'ncdu'
 brew 'nmap'
-brew "nvm"
-brew "openssl"
-brew "packer"
-brew "pixman"
+brew 'nvm'
+brew 'openssl'
+brew 'packer'
+brew 'pixman'
+brew 'postgres', restart_service: true
 brew 'python'
 brew 'python@2'
-brew "pyqt"
-brew "pv"
-brew "pwgen"
-brew "readline"
+brew 'pyqt'
+brew 'pv'
+brew 'pwgen'
+brew 'readline'
 brew 'ruby'
 brew 'scrcpy'
 brew 'speedtest_cli'
 brew 'telnet'
 brew 'tig'
-brew "the_silver_searcher"
+brew 'the_silver_searcher'
 brew 'tmux'
 brew 'tree'
-brew "unrar"
-brew "wget"
-brew "xvid"
-brew "xz"
+brew 'unrar'
+brew 'wget'
+brew 'xvid'
+brew 'xz'
 brew 'youtube-dl'
-brew "zeromq"
-brew "zsh"
+brew 'zeromq'
+brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'zsh-completions'
-brew "zsh-syntax-highlighting"
+brew 'zsh-syntax-highlighting'
 brew 'zplug'
 
-#cask '1password'
+cask '1password'
 cask 'acorn'
 cask 'alfred'
 cask 'android-file-transfer'
 cask 'android-studio'
-cask "appcleaner"
+cask 'appcleaner'
 cask 'atext'
 cask 'bartender'
 cask 'calibre'
+cask 'cheatsheet'
 cask 'crossover'
 cask 'cyberduck'
 cask 'datagrip'
 cask 'disk-inventory-x'
 cask 'docker'
 cask 'dropbox'
+cask 'epic-games'
 cask 'fantastical'
 cask 'firefox'
 cask 'flux'
 cask 'gemini'
+cask 'github'
 cask 'go2shell'
-cask "google-chrome"
+cask 'google-backup-and-sync'
+cask 'google-chrome'
 cask 'intellij-idea'
 cask 'iterm2'
 cask 'java'
-cask "licecap"
+cask 'kodi'
+cask 'licecap'
 cask 'minikube'
-cask "muzzle"
+cask 'mongodb-compass'
+cask 'muzzle'
 cask 'netshade'
 cask 'ngrok'
 cask 'phoenix-slides'
+cask 'postman'
 cask 'pycharm'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
@@ -108,32 +124,34 @@ cask 'qlprettypatch'
 cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
-cask "quitter"
-cask "rambox"
+cask 'quitter'
+cask 'rambox'
 cask 'scapple'
 cask 'send-to-kindle'
-cask 'skitch'
+#cask 'skitch'
+cask 'skype-for-business'
 cask 'sourcetree'
 cask 'spotify'
-cask "steam"
+cask 'steam'
 cask 'suspicious-package'
 cask 'tomighty'
 cask 'ubersicht'
-cask "vagrant"
-cask "vagrant-manager"
-cask "viscosity"
+cask 'vagrant'
+cask 'vagrant-manager'
+cask 'viscosity'
 cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'vivaldi'
 cask 'vlc'
 cask 'webpquicklook'
 cask 'webstorm'
-cask "zoomus"
+cask 'yacreader'
+cask 'zoomus'
 #cask 'cheatsheet'
 
 mas 'Affinity Photo', id: 824183456
 mas 'Amphetamine', id: 937984704
-mas 'Annotate', id: 918207447
+#mas 'Annotate', id: 918207447
 mas 'Clocker', id: 1056643111
 mas 'Dropzone 3', id: 695406827
 mas 'EasyRes', id: 688211836
@@ -147,11 +165,11 @@ mas 'PDF Signer', id: 428271079
 mas 'Pocket', id: 568494494
 mas 'PopClip', id: 445189367
 mas 'ScreenFloat', id: 414528154
-mas 'Slack', id: 803453959
-mas 'Spark', id: 1176895641
+#mas 'Slack', id: 803453959
+#mas 'Spark', id: 1176895641
 mas 'The Unarchiver', id: 425424353
 mas 'Todoist', id: 585829637
 mas 'Xcode', id: 497799835
 mas 'Yoink', id: 457622435
 
-# exec "softwareupdate -i -a"
+# exec 'softwareupdate -i -a'
