@@ -10,7 +10,7 @@ alias gfb='git checkout -b feature/'
 function gpp() {
     git add -A .
     git commit -m $1
-    git push
+    git push origin "$(git_current_branch)"
 }
 
 function gcob() {
