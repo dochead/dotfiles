@@ -1,0 +1,29 @@
+StrictHostKeyChecking no
+Host bitbucket.org
+  HostName bitbucket.org
+  IdentityFile ~/.ssh/span_shayan-bitbucket
+
+Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
+
+Host span-portal
+  HostName ec2-52-14-93-46.us-east-2.compute.amazonaws.com
+  User ubuntu
+
+Host span-portal-worker
+  HostName ec2-18-223-155-89.us-east-2.compute.amazonaws.com
+  User ubuntu
+
+Host github-science37
+  HostName github.com
+  User davids37
+  IdentityFile ~/.ssh/id_rsa_s37
+  IdentitiesOnly yes
+
+Host spinnaker
+ User ubuntu
+ IdentityFile ~/.ssh/spinnerka-keypair.pem
+ Hostname ec2-52-88-171-154.us-west-2.compute.amazonaws.com
+ LocalForward 8001 127.0.0.1:8001
+ LocalForward 9001 vpc-k8s-logs-34urpllt6fegbxsuznjrt7b3ke.us-west-2.es.amazonaws.com:443
