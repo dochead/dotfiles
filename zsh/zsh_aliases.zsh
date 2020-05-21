@@ -32,7 +32,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 alias logonhp='ssh shayan@starscream.local'
-alias logonjen='ssh ubuntu@ec2-52-14-173-52.us-east-2.compute.amazonaws.com'
+alias logonjen='ssh ubuntu@ec2-18-222-107-56.us-east-2.compute.amazonaws.com'
 alias chpor='workon span-portal-bwukC97e;cd ~/span/span-portal'
 alias chans='workon anselib;cd ~/span/anselib'
 alias py3d='workon py3-def'

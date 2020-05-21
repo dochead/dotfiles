@@ -27,3 +27,17 @@ Host spinnaker
  Hostname ec2-52-88-171-154.us-west-2.compute.amazonaws.com
  LocalForward 8001 127.0.0.1:8001
  LocalForward 9001 vpc-k8s-logs-34urpllt6fegbxsuznjrt7b3ke.us-west-2.es.amazonaws.com:443
+
+Host apple_sql_host
+ User ubuntu
+ IdentityFile /Users/shayan/span/anselib/pems/appleamp-enterprise-server-swarm-a.pem
+ Hostname 54.173.202.88
+
+# Elasticsearch Tunnel
+Host estunnel
+HostName 3.120.251.221
+User ec2-user
+IdentitiesOnly yes
+IdentityFile ~/.ssh/span-kubernetes-access
+LocalForward 9200 vpc-span-elk-cluster-rmr2wzhyflwtfyl327ru233xjm.eu-central-1.es.amazonaws.com:443
+
