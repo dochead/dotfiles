@@ -31,7 +31,7 @@ alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy . | echo '=> Public key copied to p
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-alias logonhp='ssh shayan@starscream.local'
+alias logonhp='ssh shayan@192.168.0.102'
 alias logonjen='ssh ubuntu@ec2-18-222-107-56.us-east-2.compute.amazonaws.com'
 alias chpor='workon span-portal-bwukC97e;cd ~/span/span-portal'
 alias chans='workon anselib;cd ~/span/anselib'
@@ -156,3 +156,6 @@ function fsshmap() {
   echo $cline
   eval $cline
 }
+
+alias ytaud="youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0"
+alias ytvid="youtube-dl -f \"bestvideo[height>2160]+bestaudio[acodec=opus]/(bestvideo[height=2160][fps>30]+251)/bestvideo[height=2160]+251/bestvideo[height=2160]+140/(bestvideo[height=1440][fps>30]+251)/bestvideo[height=1440]+251/bestvideo[height=1440]+140/(bestvideo[height=1080][fps>30]+251)/bestvideo[height=1080]+251/bestvideo[height=1080]+140/(bestvideo[height=720][fps>30]+251)/bestvideo+251/bestvideo+bestaudio/best\""
