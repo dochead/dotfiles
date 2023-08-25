@@ -111,7 +111,6 @@ mas 'Amphetamine', id: 937984704
 mas 'Dropzone 3', id: 695406827
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
-mas 'Pocket', id: 568494494
 mas 'PopClip', id: 445189367
 mas 'ScreenFloat', id: 414528154
 mas 'Yoink', id: 457622435
