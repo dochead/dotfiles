@@ -85,19 +85,6 @@ alias dockstop='podman stop $(podman ps -a -q)'
 # Git functions
 # ------------------------------------------
 
-function gpp() {
-    git pull
-    git add -A .
-    git commit -m $1
-    git push origin "$(git_current_branch)"
-}
-
-function gcob() {
-    git checkout -b $1
-    git commit
-    git push --set-upstream origin $1
-}
-
 git_current_branch () {
 	local ref
 	ref=$(git symbolic-ref --quiet HEAD 2> /dev/null) 

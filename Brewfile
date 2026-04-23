@@ -9,18 +9,22 @@
 # Specify directory for cask installs
 cask_args appdir: '/Applications'
 
+# tap 'apple/applejdk', 'git@github.pie.apple.com/applejdk/homebrew-applejdk'
+
 # ============================================
 # AI
 # ============================================
 cask 'chatgpt'               # ChatGPT Desktop
 cask 'claude'                # Claude AI Desktop
 cask 'jan'                   # Jan AI Desktop
+cask 'lm-studio'             # Running models
 
 # ============================================
 # Terminal & Shell
 # ============================================
 brew 'starship'                # Cross-shell prompt
 brew 'tmux'                    # Terminal multiplexer
+# brew 'zellij'                  # Modern Tmux replacement
 
 # ============================================
 # Modern CLI Replacements
@@ -70,6 +74,8 @@ brew 'fnm'                     # Fast Node Manager (replaces nvm/nodenv)
 brew 'python'
 brew 'pyenv-virtualenv'        # Python version management
 brew 'ruby'
+brew 'k9s'
+#brew 'node@24'
 
 # ============================================
 # Package Managers & Tools
@@ -89,7 +95,7 @@ brew 'awscli'
 # ============================================
 brew 'mysql', restart_service: true
 brew 'postgresql@18', restart_service: true
-brew 'redis'
+#brew 'redis'
 brew 'opensearch'
 brew 'opensearch-dashboards'
 
@@ -163,6 +169,7 @@ cask 'font-jetbrains-mono-nerd-font'
 # Terminal & Dev Apps
 # ============================================
 cask 'warp'                    # AI-native terminal (replaces iTerm2)
+cask 'ghostty'                 # iTerm Replacement
 cask 'visual-studio-code'
 cask 'jetbrains-toolbox'       # JetBrains IDE manager (for Junie)
 cask 'podman-desktop'          # Podman GUI (replaces Docker Desktop)
@@ -181,7 +188,8 @@ cask 'ubersicht'               # Desktop widgets
 cask 'tomighty'                # Pomodoro timer
 cask 'quitter'                 # Auto-quit inactive apps
 cask 'popclip'                 # iOS style selection tools
-cask 'fastrepl/hyprnote/hyprnote@nightly'  # Note-taking app
+cask 'fastrepl/fastrepl/char@nightly'  # Note-taking app
+cask 'jordanbaird-ice@beta'
 
 # ============================================
 # Media & Documents
@@ -199,6 +207,8 @@ cask 'telegram'
 cask 'arc'
 cask 'zoom'                   # Video conferencing
 cask 'nomachine'              # Remote desktop
+cask 'whatsapp'
+cask 'slack'
 
 # ============================================
 # Gaming & Fun
@@ -224,6 +234,16 @@ mas 'ScreenFloat', id: 414528154       # Screenshot manager
 mas 'Yoink', id: 457622435             # Drag & drop shelf
 
 # ============================================
+# Apple Brew Installs
+# ============================================
+# brew 'applejdk-11'
+brew 'jenv'
+brew 'gradle'
+brew 'maven'
+brew 'apple/sre-tools/sprox'
+brew 'apple/isd-dev/acc'
+
+# ============================================
 # Removed / Replaced:
 # ============================================
 # ack, the_silver_searcher → ripgrep
@@ -239,3 +259,4 @@ mas 'Yoink', id: 457622435             # Drag & drop shelf
 # v8-315 → removed (outdated)
 # pyqt → removed (unused?)
 # dart tap → removed
+

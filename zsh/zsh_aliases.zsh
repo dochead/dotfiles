@@ -8,15 +8,20 @@ alias gcd='git checkout develop'
 alias gmod='git merge origin/develop'
 alias gfb='git checkout -b feature/'
 function gpp() {
+    if [ -z "$1" ]; then
+        echo "Usage: gpp \"commit message\""
+        return 1
+    fi
     git add -A .
-    git commit -m $1
-    git push origin "$(git_current_branch)"
+    git commit -m "$1" || return 1
+    git pull --no-rebase || return 1
+    git push origin "$(git branch --show-current)"
 }
 
 function gcob() {
-    git checkout -b $1
+    git checkout -b "$1" || return 1
     git commit
-    git push --set-upstream origin $1
+    git push --set-upstream origin "$1"
 }
 
 alias topten='du -hsx * | sort -rh | head -10'
@@ -103,9 +108,9 @@ alias gfg='git ls-files | grep'
 alias gfo='git fetch origin'
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
-alias ggpull='git pull origin "$(git_current_branch)"'
+alias ggpull='git pull origin "$(git branch --show-current)"'
 alias ggpur=ggu
-alias ggpush='git push origin "$(git_current_branch)"'
+alias ggpush='git push origin "$(git branch --show-current)"'
 alias ghh='git help'
 alias gl='git pull'
 alias glg='git log --stat'
@@ -144,3 +149,9 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash show --patch'
+
+# Apple Aliases
+alias tunnel-qa='cqlconnect tunnel itms11shared21 itms11shared21_s01'
+alias login-qa='cqlconnect cqlsh --username itms11shared21_cassandra_user_admin --password C3C06E2C-E057-47B5-B618-7457F2758ACA'
+
+alias docker=podman
